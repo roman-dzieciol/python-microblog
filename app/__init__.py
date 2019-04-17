@@ -65,5 +65,5 @@ from flask import request
 
 @babel.localeselector
 def get_locale():
-    return 'es'
-    #return request.accept_languages.best_match(app.config['LANGUAGES'])
+    #return 'es'
+    return request.accept_languages.best_match(app.config['LANGUAGES'])
